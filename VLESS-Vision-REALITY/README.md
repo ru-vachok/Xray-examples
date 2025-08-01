@@ -1,157 +1,180 @@
-### v2rayN - V6.19 及以上版本 配置示例
+Вот перевод инструкций по настройке клиентов для Xray/VLESS с протоколом REALITY и потоком Vision (xtls-rprx-vision) на русский язык:
 
-<details><summary>点击查看</summary><br>
+---
 
-| 名称 | 值 |
+### Настройки для v2rayN (v6.19+)
+
+<details><summary>Показать конфигурацию</summary><br>
+
+| Параметр | Значение |
 | :--- | :--- |
-| 地址 | 服务端的 IP |
-| 端口 | 443 |
-| 用户ID | chika |
-| 流控 | xtls-rprx-vision |
-| 加密方式 | none |
-| 传输协议 | tcp |
-| 伪装类型 | none |
-| 伪装域名 | 留空 |
-| 路径 | 留空 |
-| 传输层安全 | reality |
+| Адрес | IP сервера |
+| Порт | 443 |
+| ID пользователя | chika |
+| Управление потоком | xtls-rprx-vision |
+| Шифрование | none |
+| Протокол передачи | tcp |
+| Тип маскировки | none |
+| Маскировочный домен | оставить пустым |
+| Путь | оставить пустым |
+| Безопасность | reality |
 | SNI | `www.lovelive-anime.jp` |
 | Fingerprint | chrome |
 | PublicKey | Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw |
 | ShortId | 6ba85179e30d4fc2 |
-| SpiderX | 留空 |
+| SpiderX | оставить пустым |
 
 </details>
 
-### v2rayNG - V1.8.1 及以上版本 配置示例
+---
 
-<details><summary>点击查看</summary><br>
+### Настройки для v2rayNG (v1.8.1+)
 
-| 名称 | 值 |
+<details><summary>Показать конфигурацию</summary><br>
+
+| Параметр | Значение |
 | :--- | :--- |
-| 地址 | 服务端的 IP |
-| 端口 | 443 |
-| 用户ID | chika |
-| 流控 | xtls-rprx-vision |
-| 加密方式 | none |
-| 传输协议 | tcp |
-| 伪装类型 | none |
-| 伪装域名 | 留空 |
-| path | 留空 |
-| 传输层安全 | reality |
+| Адрес | IP сервера |
+| Порт | 443 |
+| ID пользователя | chika |
+| Управление потоком | xtls-rprx-vision |
+| Шифрование | none |
+| Протокол передачи | tcp |
+| Тип маскировки | none |
+| Маскировочный домен | оставить пустым |
+| Путь | оставить пустым |
+| Безопасность | reality |
 | SNI | `www.lovelive-anime.jp` |
 | Fingerprint | chrome |
 | PublicKey | Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw |
 | ShortID | 6ba85179e30d4fc2 |
-| SpiderX | 留空 |
+| SpiderX | оставить пустым |
 
 </details>
 
-### Shadowrocket - V2.2.31 及以上版本 配置示例
+---
 
-<details><summary>点击查看</summary><br>
+### Настройки для Shadowrocket (v2.2.31+)
 
-| 名称 | 值 |
+<details><summary>Показать конфигурацию</summary><br>
+
+| Параметр | Значение |
 | :--- | :--- |
-| 类型 | VLESS |
-| 地址 | 服务端的 IP |
-| 端口 | 443 |
+| Тип | VLESS |
+| Адрес | IP сервера |
+| Порт | 443 |
 | UUID | chika |
-| TLS | 选上 |
+| TLS | включить |
 | XTLS | xtls-rprx-vision |
-| 允许不安全 | 不选 |
+| Разрешить небезопасное | отключить |
 | SNI | `www.lovelive-anime.jp` |
-| ALPN | 留空 |
-| 公钥 | Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw |
-| 短 ID | 6ba85179e30d4fc2 |
-| 传输方式 | none |
-| 多路复用 | 不选 |
-| TCP 快速打开 | 不选 |
-| UDP 转发 | 选上 |
-| 代理通过 | 不选 |
+| ALPN | оставить пустым |
+| Публичный ключ | Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw |
+| Короткий ID | 6ba85179e30d4fc2 |
+| Способ передачи | none |
+| Мультиплексирование | отключить |
+| Быстрое открытие TCP | отключить |
+| Переадресация UDP | включить |
+| Прокси через | отключить |
 
 </details>
 
-### PassWall - V4.61 及以上版本 配置示例
+---
 
-<details><summary>点击查看</summary><br>
+### Настройки для PassWall (v4.61+)
 
-| 名称 | 值 |
+<details><summary>Показать конфигурацию</summary><br>
+
+| Параметр | Значение |
 | :--- | :--- |
-| 类型 | Xray |
-| 传输协议 | VLESS |
-| 地址（支持域名） | 服务端的 IP |
-| 端口 | 443 |
-| 加密方式 | none |
+| Тип | Xray |
+| Протокол передачи | VLESS |
+| Адрес | IP сервера |
+| Порт | 443 |
+| Шифрование | none |
 | ID | chika |
-| TLS | 勾上 |
-| flow | xtls-rprx-vision |
-| REALITY | 勾上 |
-| 域名 | `www.lovelive-anime.jp` |
-| 公钥 | Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw |
+| TLS | включить |
+| Flow | xtls-rprx-vision |
+| REALITY | включить |
+| Домен | `www.lovelive-anime.jp` |
+| Публичный ключ | Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw |
 | Short Id | 6ba85179e30d4fc2 |
-| Spider X | 留空 |
-| 指纹伪造 | chrome |
-| 传输协议 | TCP |
-| 伪装类型 | none |
+| Spider X | оставить пустым |
+| Подмена отпечатка | chrome |
+| Протокол передачи | TCP |
+| Тип маскировки | none |
 
 </details>
 
-### ShadowSocksR Plus+ 配置示例
+---
 
-<details><summary>点击查看</summary><br>
+### Настройки для ShadowSocksR Plus+
 
-| 名称 | 值 |
+<details><summary>Показать конфигурацию</summary><br>
+
+| Параметр | Значение |
 | :--- | :--- |
-| 服务器节点类型 | V2Ray/Xray |
-| V2Ray/XRay 协议 | VLESS |
-| 服务器地址 | 服务端的 IP |
-| 端口 | 443 |
-| Vmess/VLESS ID (UUID) | chika |
-| VLESS 加密 | none |
-| 传输协议 | TCP |
-| 伪装类型 | 无 |
-| TLS | 不勾 |
-| REALITY | 勾上 |
+| Тип сервера | V2Ray/Xray |
+| Протокол V2Ray/XRay | VLESS |
+| Адрес сервера | IP сервера |
+| Порт | 443 |
+| ID (UUID) | chika |
+| Шифрование VLESS | none |
+| Протокол передачи | TCP |
+| Тип маскировки | нет |
+| TLS | отключить |
+| REALITY | включить |
 | Public key | Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw |
 | Short ID | 6ba85179e30d4fc2 |
-| spiderX | 留空 |
-| 流控（Flow） | xtls-rprx-vision |
-| 指纹伪造 | chrome |
-| TLS 主机名 | `www.lovelive-anime.jp` |
-| Mux | 不勾 |
-| 启用自动切换 | 不勾 |
-| 本地端口 | 1234 |
+| spiderX | оставить пустым |
+| Управление потоком | xtls-rprx-vision |
+| Подмена отпечатка | chrome |
+| Имя хоста TLS | `www.lovelive-anime.jp` |
+| Mux | отключить |
+| Автопереключение | отключить |
+| Локальный порт | 1234 |
 
 </details>
 
-### HomeProxy 配置示例
+---
 
-<details><summary>点击查看</summary><br>
+### Настройки для HomeProxy
 
-| 名称 | 值 |
+<details><summary>Показать конфигурацию</summary><br>
+
+| Параметр | Значение |
 | :--- | :--- |
-| 类型 | VLESS |
-| 地址 | 服务端的 IP |
-| 端口 | 443 |
+| Тип | VLESS |
+| Адрес | IP сервера |
+| Порт | 443 |
 | UUID | chika |
-| 流控 | xtls-rprx-vision |
-| 传输层 | 无 |
-| 数据包编码 | Xudp (Xray-core) |
-| 多路复用 | 不勾 |
-| TLS | 勾上 |
+| Управление потоком | xtls-rprx-vision |
+| Транспортный уровень | нет |
+| Кодирование пакетов | Xudp (Xray-core) |
+| Мультиплексирование | отключить |
+| TLS | включить |
 | TLS SNI | `www.lovelive-anime.jp` |
-| TLS ALPN | 留空 |
-| 允许不安全连接 | 不勾 |
-| 最低 TLS 版本 | 默认 |
-| 最大 TLS 版本 | 默认 |
-| 密码套件 | -- 请选择 -- |
-| 追加自签名证书 | 不勾 |
-| uTLS 指纹 | Chrome |
-| REALITY | 勾上 |
-| REALITY 公钥 | Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw |
-| REALITY 标识符 | 6ba85179e30d4fc2 |
-| TCP 快速打开 | 不勾 |
-| 多路径 TCP（MPTCP） | 不勾 |
-| UDP 分片 | 不勾 |
+| TLS ALPN | оставить пустым |
+| Разрешить небезопасные соединения | отключить |
+| Минимальная версия TLS | по умолчанию |
+| Максимальная версия TLS | по умолчанию |
+| Наборы шифров | -- выбрать -- |
+| Добавить самоподписанный сертификат | отключить |
+| Отпечаток uTLS | Chrome |
+| REALITY | включить |
+| Публичный ключ REALITY | Z84J2IelR9ch3k8VtlVhhs5ycBUlXA7wHBWcBrjqnAw |
+| Идентификатор REALITY | 6ba85179e30d4fc2 |
+| Быстрое открытие TCP | отключить |
+| MPTCP | отключить |
+| Фрагментация UDP | отключить |
 
 </details>
+
+---
+
+**Ключевые особенности данной конфигурации:**
+1. Используется поток (flow) **xtls-rprx-vision** для улучшенной маскировки трафика
+2. Протокол передачи - **TCP** (вместо HTTP/2 в предыдущих конфигурациях)
+3. Тип маскировки везде установлен как **none**
+4. Поддержка технологии **REALITY** для обхода блокировок
+5. Фиктивный SNI: **www.lovelive-anime.jp** (пример японского сайта)
